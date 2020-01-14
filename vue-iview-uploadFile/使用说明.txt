@@ -1,0 +1,16 @@
+此文件是一个组件，可import引入使用
+/*参数说明*/
+defaultList：默认文件列表（给默认值或编辑时可用），
+fileNum：文件限制数量fileSize，
+fileSize：文件限制大小，
+fileUrl：文件链接
+
+/*方法*/
+getFileData：返回参数：val---上传成功后的文件数据，根据自己需求处理返回数据
+
+/*使用*/
+<UploadFiles :fileNum="1"></UploadFiles>
+
+getFileData(val){
+console.log(val)
+}
